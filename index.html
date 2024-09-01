@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Radi Elazazy Portfolio </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+</head>
+<body>
+    <nav id="desktop-nav">
+        <div class = "logo"> Radi Elazazy </div>
+        <div>
+            <ul class = "nav-links">
+                <li><a href="#about">About</a></li>                
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo">Radi Elazazy</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="#project" onclick="toggleMenu()">Project</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+            </ul>
+
+            </div>
+        </div>
+
+    </nav>
+    <section id="profile">
+        <div class = "section__pic-container">
+            <img src = "assets/myprofilepicture.png" alt="Radi Elazazy profile picture">
+        </div>
+        <div class="section__text"> 
+            <p class="section__text__p1">Hello, I'm</p>
+            <h1 class="title">Radi Elazazy</h1>
+            <p class="section__text__p2">Engineer and Developer</p>
+            <div class="btn-container">
+                <button
+                 class="btn btn-color-2" 
+                 onclick="window.open('./assets/myresume.pdf')">
+                 Download My CV</button>
+
+                <button 
+                class="btn btn-color-1"
+                id="nightModeToggle">
+                Toggle Night Mode</button>
+
+            </div>
+            <div id="socials-container">
+                <img src="./assets/linkedin.png" alt="My LinkedIn Profile"
+                class="icon" 
+                onclick="location.href='https://www.linkedin.com/in/radi-elazazy-22888b195/'"
+                />
+                <img src="./assets/github.png" alt="My GitHub Profile"
+                class="icon" 
+                onclick="location.href='https://github.com/radielazazy1'"
+                />
+            </div>
+        </div>
+    </section>
+    <section id="projects">
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title">Projects</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/ecmweb1.png"
+                alt="Project 1"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Computational Simulation</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Github
+              </button>
+              <button id="showBox"
+                class="btn btn-color-2 project-btn"
+                
+              >
+                Read More
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/bioinformatics1.png"
+                alt="Project 2"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Physiological Modeling</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Github
+              </button>
+              <button id="showBox2"
+                class="btn btn-color-2 project-btn"
+              
+              >
+                Read More
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/deeplearninglogo.png"
+                alt="Project 3"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Deep Learning Project</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Github
+              </button>
+              <button id="showBox3"
+                class="btn btn-color-2 project-btn"
+                
+              >
+                Read More
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<!-- Hidden box 1 -->
+<div id="scrollableBox" class="hidden-box">
+  <div class="box-header">
+    <span id="closeBoxButton" class="close-button">&times;</span>
+  </div>
+  <div class="box-content">
+    <!-- Add a scrollable container for the content -->
+    <div class="scrollable-content">
+      <h1>Tensile Tests on Extracellular Matrix Model</h1>
+      <p><span class="black-text"><b>Skills Used: Linux, Python, LAMMPs</b></span></p>
+
+
+      <p>During my tenure at UCONN Research, I was part of a specialized team entrusted with the pivotal task of formulating a precise computational model of the extracellular matrix. This undertaking was strategically aimed at providing a robust framework for prospective investigations into the realm of rare diseases. Given the inherent intricacy of the extracellular matrix, characterized by its minuscule scale, our approach necessitated the utilization of computational models as the most efficacious means of in-depth structural scrutiny.
+
+          Within the scope of this research endeavor, I assumed the role of refining the tensile strength attributes inherent to the extracellular matrix. </p>
+      
+      <img src="./assets/ecmreal.jpg"
+          alt = "project-1-image-1"
+          class = "ecm-image"/>
+          
+          
+      <p>To commence this effort, I embarked on an extensive exploration of academic studies, delving into the behavior of tensile strength exhibited by the extracellular matrix. My inquiry led me to the discerning realization that the ideal representation of the extracellular matrix's structural attributes is akin to that of a web-like configuration.<br></p>
+      
+      <img src="./assets/ecmweb1.png"
+      alt = "ecm-web-1"
+      class = "ecmreal"/>
+      <img src="./assets/ecmweb2.png"
+      alt = "ecm-web-2"
+      class = "ecmreal"/>
+
+      <div class="ecm-caption">
+        <p>Two real life images that demonstrate the web-like structure that is the ECM</p>
+      </div>
+      
+      <p>To effectively execute this project, I undertook a multifaceted approach, involving the acquisition of proficiencies in Linux and LAMMPs,
+        
+        while simultaneously harnessing my existing expertise in MatLab and Python. It is noteworthy to mention that LAMMPs 
+        
+        is most optimally executed within the Linux operating environment. Consequently, I constructed LAMMPs code, 
+        
+        meticulously aligning thousands of simulated particles in a web-like formation. <br><br>
+      
+
+        Here are four web structure simulations with varying impact locations 
+        and speeds: 15 m/s on the lower left, 30 m/s on the upper right, 35 m/s at the center, and 50 m/s at the center.
+      </p>
+        
+        <div class="twopics">
+
+          <img src="./assets/15ms.png"
+            alt = "15ms"
+            class = "lammpspic"/>
+
+
+          <img src="./assets/30ms.png"
+            alt = "30ms"
+            class = "lammpspic"/>
+
+        </div>
+        
+        <div>
+          <img src="./assets/35ms.png"
+            alt = "35ms"
+            class = "lammpspic"/>
+          <img src="./assets/50ms.png"
+            alt = "50ms"
+            class = "lammpspic"/>
+        </div>
+        
+        <p>Leveraging data gathered from both these simulations and a variety of other 
+          experiments involving web-like structures, I created a data-driven model shown 
+          in the video below. In 
+          this model, I utilized the properties observed in the earlier simulation to 
+          generate a system where individual beads interact as if connected by a web-like 
+          string, even though the overall appearance may not resemble a traditional web.                                               
+        </p>
+      <div>
+        <img src="assets/lammpspull.gif" alt ="lammpspull" class="lammpsgif">
+      </div>
+
+      <p>I developed a Python script capable of processing the output data generated by LAMMPs 
+        simulations. This script was employed to generate a stress-strain graph based on the 
+        simulation results. The image outputted a stress strain ratio that emulates that of a real
+        spiderweb, meaning that the project was succesful and could be passed on to the next person 
+        in my research group.                                             
+      </p>
+      <div>
+        <img src="./assets/stress-strain.png" alt="stress-strain" class="lammpsgif">
+      </div>
+      <!-- Add more content as needed for Box 1 -->
+    </div>
+  </div>
+</div>
+
+<!-- Hidden box 2 -->
+<div id="scrollableBox2" class="hidden-box">
+  <div class="box-header">
+    <span id="closeBoxButton2" class="close-button">&times;</span>
+  </div>
+  <div class="box-content">
+    <!-- Add a scrollable container for the content -->
+    <div class="scrollable-content">
+      <h1>Modeling of Physiological Processes</h1>
+      <p><span class="black-text"><b>Skills Used: Python, MATLAB</b></span></p>
+      <!-- Your content for Box 2 goes here -->
+      <p>In the following projects, I analyze datasets of previously performed chemical or physological experiments.
+         I use my knowledge of chemistry and physiological moddeling, paired with a data heavy approach
+        to extrapolate conclusions about the nature of the experiments.
+      </p>
+      <p><span class="black-text"><b>Project One: Cooperative Enzymes</b></span></p>
+
+      <p>
+        <b>Background: </b> in cooperative enzymatic reactions, when one substrate binds to the enzyme, it enhances 
+        the receptivity of other binding sites because the enzyme undergoes chemical modifications.</p>
+
+        <img src="./assets/sinusoidalgraph.png"
+        alt = "sinusoidalgraph"
+        class = "sinusoidalgraph"/>
+        
+      <div class="ecm-caption">
+        <p><b>Substrate Concentration vs Reaction Velocity</b></p>
+      </div>
+        
+
+        <p>
+        Above is a graph that represents the substrate concentration vs reaction velocity in a 
+        cooperative enzymatic reaction. The standard for a cooperative reaction is a resemblance of a
+        sinusoidal curve, as seen above. My first goal was to use the data below and determine whether 
+        or not I would get a similar curve.
+      </p>
+
+
+
+      <table >
+        <tr>
+            <th>S (mM)</th>
+            <th>V (mM/s)</th>
+        </tr>
+        <tr>
+            <td>0.2</td>
+            <td>0.01</td>
+        </tr>
+        <tr>
+            <td>0.5</td>
+            <td>0.06</td>
+        </tr>
+        <tr>
+            <td>1.0</td>
+            <td>0.27</td>
+        </tr>
+        <tr>
+            <td>1.5</td>
+            <td>0.50</td>
+        </tr>
+        <tr>
+            <td>2.0</td>
+            <td>0.67</td>
+        </tr>
+        <tr>
+            <td>2.5</td>
+            <td>0.78</td>
+        </tr>
+        <tr>
+            <td>3.5</td>
+            <td>0.89</td>
+        </tr>
+        <tr>
+            <td>4.0</td>
+            <td>0.92</td>
+        </tr>
+        <tr>
+            <td>4.5</td>
+            <td>0.94</td>
+        </tr>
+        <tr>
+            <td>5.0</td>
+            <td>0.95</td>
+        </tr>
+    </table>
+
+    <p><br>This data generated the sinusoidal curve below, but this was not enough to determine whether
+      the reaction was cooperative, and more complex data manipulation was required.<br>
+    </p>
+
+      <img src="./assets/pmodeling.png"
+      alt = "pmodeling"
+      class = "ecmreal"/>
+
+      <!-- Add more content as needed for Box 2 -->
+    </div>
+  </div>
+</div>
+
+<!-- Hidden box 3 -->
+<div id="scrollableBox3" class="hidden-box">
+  <div class="box-header">
+    <span id="closeBoxButton3" class="close-button">&times;</span>
+  </div>
+  <div class="box-content">
+    <!-- Add a scrollable container for the content -->
+    <div class="scrollable-content">
+      <!-- Your content for Box 3 goes here -->
+      <p>The following project is still in progress and will be updated soon.</p>
+      <!-- Add more content as needed for Box 3 -->
+    </div>
+  </div>
+</div>
+
+
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#about'"
+      />
+    </section>
+    <section id="about">
+        <p class = "section__text__p1">Get To Know More</p>
+        <h1 class = "title">About Me</h1>
+        <div class="section-container">
+            <div class="section__pic-container">
+                <img src="./assets/myaboutpic.png"
+                 alt="Profile Picture"
+                 class="about-pic"/>
+            </div>
+        <div class="about-details-container">
+            <div class="about-containers">
+                <div class="details-container">
+                    <img src="./assets/experience.png" 
+                    alt="Experience icon"
+                    class="icon"/>
+                    <h3> Professional Experience</h3>
+                    <p>Data Analyst - Ummatics inc (5 mo)<br>
+                        <br>
+                        Undergraduate Researcher - 
+                        UCONN Research (2 yrs)
+                        </p>    
+                </div>
+                <div class="details-container">
+                    <img src="./assets/education.png"
+                    alt="Education Icon"
+                    class="icon"/>
+                    <h3>UCONN (May 2024)</h3>
+                    <p>Major | Biomedical Engineering
+                        <br>
+                        Minor | Computer Science
+                    </p>
+                </div>                                               
+            </div>
+            <div class ="text-container">
+                <p>Lorem ipsum dolor sit amet consectetur 
+                    adipisicing elit. Optio, et quod a pariatur, 
+                    quaerat aliquid commodi ullam corporis quibusdam i
+                    ste officia? Debitis, consectetur pariatur adipisc
+                    i similique iste at error veritatis?</p>
+            </div>
+        </div>
+    </div>
+
+    </section>
+
+    </body>
+
+
+    <script src = 'script.js'></script>
+</body>
+</html>

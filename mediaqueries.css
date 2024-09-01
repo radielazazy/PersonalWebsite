@@ -1,0 +1,15 @@
+@media screen and (max-width: 1200px) {
+    #desktop-nav {
+        display: none;
+    }
+    #hamburger-nav {
+        display:flex;
+    }
+}
+
+
+@media (max-width: 600px) {
+    .lammpspic {
+        width: 100%; /* One picture per row on smaller screens */
+    }
+}
